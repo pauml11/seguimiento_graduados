@@ -42,7 +42,7 @@ function mostrarEncuestas() {
 
   if (!usuarioActual) {
     alert("No hay usuario logueado.");
-    window.location.href = "login.html";
+    window.location.href = "index.html";
     return;
   }
 
@@ -95,7 +95,7 @@ document
   .getElementById("cerrarSesion")
   ?.addEventListener("click", function () {
     localStorage.removeItem("usuarioActual");
-    window.location.href = "login.html";
+    window.location.href = "index.html";
   });
 
 // Ejecutar cuando el DOM esté listo
