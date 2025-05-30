@@ -30,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const cont = document.getElementById("historial-trabajos");
     cont.innerHTML = "";
-    if (usuario.trabajos && usuario.trabajos.length) {
+    if (usuario.trabajos?.length) {
       usuario.trabajos.forEach((t) => {
         const li = document.createElement("li");
         li.textContent = `${t.empresa} - ${t.cargo} (${t.fechaInicio} a ${t.fechaFin || "Actualidad"})`;
