@@ -4,12 +4,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    display:  block;
     text-align: right;
     margin-left: auto;
     width: fit-content;
     text-decoration: none;
-    cursor: pointer;
     background: #029f12;
     border-radius: 3px;
     cursor: pointer;
