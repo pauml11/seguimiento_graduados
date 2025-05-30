@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encuestas</title>
+        <link rel="icon" href="images/favicon_ULEAM.png" />
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/admin_encuesta.css">
+    </head>
+    <body>
+      
+      <div class="topbar">
+        <a class="admin" href="admin.html">Volver al panel de administración</a>
+      </div>
+      
+      <main>
+        <div class="contenedor">
+          <h1>Crear Encuesta</h1>
+          <form id="formCrearEncuesta">
+            <input type="text" id="tituloEncuesta" placeholder="Título encuesta" required />
+            <textarea id="descripcionEncuesta" placeholder="Descripción encuesta"></textarea>
+            
+            <div class="botones-formulario">
+              <button type="submit">Crear encuesta</button>
+              <button type="button" id="btnCancelarEncuesta">Cancelar</button>
+            </div>
+          </form>
+          
+          
+          <hr />
+          
+          <h2>Encuestas disponibles para usuarios</h2>
+    
+            <h3>Encuestas creadas</h3>
+            <ul id="encuestas-lista"></ul>
+          
+          <div id="editarEncuesta" style="display: none;">
+            <h3>Editar Encuesta</h3>
+            <form id="formEditarEncuesta">
+              <input type="hidden" id="idEncuestaEditar" />
+              <input type="text" id="tituloEncuestaEditar" placeholder="Título encuesta" required />
+              <br /><br />
+              <textarea id="descripcionEncuestaEditar" placeholder="Descripción encuesta"></textarea>
+              <br /><br />
+              <button type="submit">Guardar cambios</button>
+              <button type="button" id="btnCancelarEditarEncuesta">Cancelar</button>
+            </form>
+          </div>
+        </div>
+      </main>
+      <div class="footer">
+        <p>© 2025 ULEAM - Todos los derechos reservados.</p>      
+  <script src="js/admin_encuesta.js"></script>
+
+</body>
+</html>

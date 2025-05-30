@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Responder Encuesta</title>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <div class="topbar">
+        <a class="btn" href="inicio.html">← Volver al Inicio</a>
+    </div>
+
+    <div class="encuesta-container">
+        <h1 id="tituloEncuesta"></h1>
+        <p id="descripcionEncuesta"></p>
+
+        <form id="formularioRespuesta">
+            <label for="respuesta">Tu respuesta:</label><br>
+            <textarea id="respuesta" name="respuesta" rows="5" cols="40" required></textarea><br><br>
+            <button type="submit">Enviar Respuesta</button>
+        </form>
+    </div>
+
+    <script src="js/contestar.js"></script>
+</body>
+</html>

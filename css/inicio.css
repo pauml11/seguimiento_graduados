@@ -1,0 +1,56 @@
+.contestarEncuesta {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #1a9183;
+    color: white;
+    cursor: pointer;
+}
+.contestarEncuesta:hover {
+    background-color: #5a5a5a;
+}
+#encuestas-lista {
+    width: 80%; 
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px; 
+    margin: 0 auto; 
+    padding: 10px;
+}
+
+#encuestas-lista li {
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 15px 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+strong {
+    color: #0b0a11;
+    display: inline-block;
+    margin-bottom: 10px;
+    margin-right: 10px;
+  }
+  span {
+    color: #100249;
+  }
+
+  #cerrarSesion, .perfil {
+    padding: 10px 20px;
+    background-color: #dc4848; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+  }
+  #cerrarSesion:hover, .perfil:hover {
+    background-color: #45a049;  
+  }

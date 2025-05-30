@@ -1,0 +1,75 @@
+.container-perfil{
+  width: 80%;
+  max-width: 1000px;
+  margin: 50px auto;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+.perfil-info {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.perfil-datos {
+  flex: 1;
+  min-width: 300px;
+}
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #1a9183;
+  color: white;
+  cursor: pointer;
+}
+.botones {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+}
+button:hover {
+  background-color: #5a5a5a;
+}
+
+.foto {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+strong {
+  color: #0b0a11;
+  display: inline-block;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+span {
+  color: #100249;
+}
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+  }
+  input, select {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  #form-trabajo-anterior {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  #form-trabajo-anterior input {
+    margin-bottom: 8px;
+  }
+  

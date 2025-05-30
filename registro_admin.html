@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="icon" href="images/favicon_ULEAM.png" />
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="stylesheet" href="css/admin_encuesta.css">
+</head>
+<body>
+    
+  <div class="topbar">
+    <a class="admin" href="admin.html">Volver al panel de administración</a>
+  </div>
+
+  <div class="login-container">
+    <form id="registro-form" class="login-box">
+      <img src="images/LOGO.png" alt="Logo ULEAM">
+      <h1>Universidad Laica Eloy Alfaro de Manabí</h1>
+        <input type="text" id="nombre" placeholder="Nombres y apellidos" required>
+        <input type="text" id="usuario" placeholder="Usuario" required>
+        <input type="text" id="cedula" placeholder="Cédula de identidad" required>
+        <input type="date" id="fecha_nacimiento" placeholder="Fecha de nacimiento (DD/MM/AAAA)" required>
+        <input type ="text" id="carrera" placeholder="Carrera" required>
+        <input type ="text" id="direccion" placeholder="Dirección">
+        <input type ="text" id="telefono" placeholder="Teléfono" required>
+        <input type ="email" id="correo" placeholder="Correo electrónico" required>
+        <input type="password" id="contrasena" placeholder="Contraseña" required>
+        <input type="password" id="confirmar_contrasena" placeholder="Confirmar contraseña" required>
+        <button type="submit" value="Registrarse">Registrar usuario</button>
+    </form>
+
+    </div>
+    <div class="footer">
+        <p>© 2025 ULEAM - Todos los derechos reservados. </p>
+    </div>
+    <script src="js/registro.js"></script>
+</body>
+</html>

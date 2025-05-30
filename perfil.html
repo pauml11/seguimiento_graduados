@@ -1,0 +1,121 @@
+<!-- perfil.html -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Perfil de usuario</title>
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/perfil.css" />
+</head>
+<body>
+
+  <div class="topbar">
+    <a class="btn" href="https://www.uleam.edu.ec/" target="_blank">Sitio de la ULEAM</a>
+    <div class="botones">
+      <button id="cerrarSesion">Cerrar sesión</button>
+    </div>
+  </div>
+
+  <div class="container-perfil">
+    <div class="perfil-info">
+      <img class="foto" id="foto-perfil" src="" alt="Foto de perfil" />
+      <div class="perfil-datos">
+        <h1>Mi perfil</h1>
+        <p><strong>Nombre:</strong> <span id="nombre"></span></p>
+        <p><strong>Usuario:</strong> <span id="usuario"></span></p>
+        <p><strong>Cédula:</strong> <span id="cedula"></span></p>
+        <p><strong>Fecha nacimiento:</strong> <span id="fecha_nacimiento"></span></p>
+        <p><strong>Carrera:</strong> <span id="carrera"></span></p>
+        <p><strong>Dirección:</strong> <span id="direccion"></span></p>
+        <p><strong>Teléfono:</strong> <span id="telefono"></span></p>
+        <p><strong>Correo:</strong> <span id="correo"></span></p>
+        <p><strong>Estado laboral:</strong> <span id="estado-laboral-texto"></span></p>
+        <p><strong>Empresa:</strong> <span id="empresa-texto"></span></p>
+        <p><strong>Cargo:</strong> <span id="cargo-texto"></span></p>
+
+        <h3>Historial de trabajos</h3>
+        <ul id="historial-trabajos"></ul>
+      </div>
+
+      <div class="botones">
+        <button id="btn-editar-perfil">Editar perfil</button>
+      </div>
+
+      <form id="form-editar-perfil" style="margin-top: 20px; display: none;">
+        <div class="row">
+          <label for="input-foto">Foto de perfil:</label>
+          <input type="file" id="input-foto" accept="image/*" />
+        </div>
+
+        <label for="edit-nombre">Nombre:</label>
+        <input id="edit-nombre" name="nombre" type="text" /><br />
+
+        <label for="edit-usuario">Usuario:</label>
+        <input id="edit-usuario" name="usuario" type="text" /><br />
+
+        <label for="edit-cedula">Cédula:</label>
+        <input id="edit-cedula" name="cedula" type="text" /><br />
+
+        <label for="edit-fecha_nacimiento">Fecha nacimiento:</label>
+        <input id="edit-fecha_nacimiento" name="fecha_nacimiento" type="date" /><br />
+
+        <label for="edit-carrera">Carrera:</label>
+        <input id="edit-carrera" name="carrera" type="text" /><br />
+
+        <label for="edit-direccion">Dirección:</label>
+        <input id="edit-direccion" name="direccion" type="text" /><br />
+
+        <label for="edit-telefono">Teléfono:</label>
+        <input id="edit-telefono" name="telefono" type="text" /><br />
+
+        <label for="edit-correo">Correo:</label>
+        <input id="edit-correo" name="correo" type="email" /><br />
+
+        <label for="estado-laboral">Estado laboral:</label>
+        <select id="estado-laboral" name="estado_laboral">
+          <option value="empleo">Empleo</option>
+          <option value="desempleo">Desempleo</option>
+        </select><br />
+
+        <h2>Trabajo actual</h2>
+        <label for="trabajo-empresa">Empresa:</label>
+          <input id="trabajo-empresa" type="text" /><br />
+
+          <label for="trabajo-cargo">Cargo:</label>
+          <input id="trabajo-cargo" type="text" /><br />
+
+          <label for="trabajo-fecha-inicio">Fecha de inicio:</label>
+          <input id="trabajo-fecha-inicio" type="month" required/><br />
+
+          <label for="trabajo-fecha-fin">Fecha de fin:</label>
+          <input id="trabajo-fecha-fin" type="month" /><br />
+
+
+        <!-- Sección para agregar trabajos anteriores -->
+        <h3>Agregar trabajo anterior</h3>
+        <button type="button" id="btn-agregar-trabajo-anterior">Agregar trabajo anterior</button>
+        <div id="form-trabajo-anterior" style="display: none;">
+          <label>Empresa:</label>
+          <input type="text" id="anterior-empresa" /><br />
+
+          <label>Cargo:</label>
+          <input type="text" id="anterior-cargo" /><br />
+
+          <label>Fecha de inicio:</label>
+          <input type="month" id="anterior-fecha-inicio"/><br />
+
+          <label>Fecha de fin:</label>
+          <input type="month" id="anterior-fecha-fin" /><br />
+
+          <button type="button" id="guardar-trabajo-anterior">Guardar trabajo anterior</button>
+        </div>
+
+        <button type="button" id="guardar" style="margin-top: 10px;">Guardar</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="js/perfil.js"></script>
+</body>
+</html>
