@@ -96,6 +96,14 @@ body {
     font-weight: bold;
   }
 
+  .olvidar-contrasena {
+    margin-top: 0.75rem; 
+    font-size: 0.9rem;
+    text-align: center;
+    color: #555;
+    font-weight: bold;
+  }
+
   .footer {
     background: #2e2e2e;
     color: white;
