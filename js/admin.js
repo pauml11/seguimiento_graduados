@@ -171,7 +171,7 @@ document
   .getElementById("cerrarSesion")
   ?.addEventListener("click", function () {
     localStorage.removeItem("usuarioActual");
-    window.location.href = "login.html";
+    window.location.href = "index.html";
   });
 
 // Inicializar
