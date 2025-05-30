@@ -140,7 +140,7 @@ form.addEventListener("submit", function (event) {
       JSON.stringify(nuevoUsuario)
     );
     alert("Registro exitoso.");
-    window.location.href = "login.html";
+    window.location.href = "index.html";
   }
 });
 
