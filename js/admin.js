@@ -74,7 +74,7 @@ function cargarOpcionesFiltros() {
     filtroCarrera.appendChild(opt);
   });
 
-  aniosUnicos.sort().forEach((anio) => {
+  aniosUnicos.sort((a, b) => a - b).forEach((anio) => {
     const opt = document.createElement("option");
     opt.value = anio;
     opt.textContent = anio;
