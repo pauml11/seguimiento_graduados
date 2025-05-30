@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const usuarioActual = JSON.parse(localStorage.getItem("usuarioActual"));
   if (!usuarioActual) {
     alert("No hay usuario logueado.");
-    window.location.href = "login.html";
+    window.location.href = "index.html";
     return;
   }
 
@@ -332,7 +332,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   document.getElementById("cerrarSesion")?.addEventListener("click", function () {
     localStorage.removeItem("usuarioActual");
-    window.location.href = "login.html";
+    window.location.href = "index.html";
   });
 
   mostrarDatos(usuarioActual);
